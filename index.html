@@ -4,6 +4,42 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>lesson 12</title>
+    <link rel="stylesheet" href="src/final.css" />
   </head>
-  <body></body>
+  <body>
+    <header
+      class="container-center flex justify-between flex-center items-center gap-1 flex-wrap"
+    >
+      <a href="#" class="p-1 border border-primary">LOGO</a>
+      <nav class="hidden md:block">
+        <ul class="flex justify-between items-center gap-1 flex-wrap">
+          <li><a href="#" class="text-primary">home</a></li>
+          <li><a href="#">about</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </nav>
+      <button class="bg-primary px-4 border-secondary md:hidden">:</button>
+    </header>
+    <section class="container p-10 mx-auto">
+      <h1 class="text-right">lesson12</h1>
+      <p class="my-10">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum possimus,
+        nostrum impedit, eaque architecto unde obcaecati sapiente praesentium l
+      </p>
+      <div class="grid grid-cols-1 gap-10 md:grid-cols-2 xl:grid-cols-3">
+        <article class="card">
+          <img src="src/img/picture1.jpg" alt="photo" />
+          <p>lorem ipsum dolor sit amet consectetur</p>
+        </article>
+        <article class="card">
+          <img src="src/img/picture2.jpg" alt="photo" />
+          <p>lorem ipsum dolor sit amet consectetur</p>
+        </article>
+        <article class="card">
+          <img src="src/img/picture3.jpg" alt="photo" />
+          <p>lorem ipsum dolor sit amet consectetur</p>
+        </article>
+      </div>
+    </section>
+  </body>
 </html>

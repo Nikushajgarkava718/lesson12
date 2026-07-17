@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+html {
+  scroll-behavior: smooth;
+}
+
+@theme {
+  --color-primary: #ff7757;
+  --color-secondary: #000;
+}
+
+@layer base {
+  /* tags */
+  h1 {
+    @apply text-4xl text-black font-bold;
+  }
+  p {
+    @apply text-base;
+  }
+}
+
+@layer components {
+  .card {
+    @apply nth-[n+2]:hidden md:nth-[n+2]:block;
+    img {
+      @apply h-80 object-cover rounded-3xl lg:h-165.25;
+    }
+  }
+  .burger-icon {
+  }
+}
+
+@utility container-center {
+  @apply container p-10 mx-auto;
+}
+
+@utility flex-center {
+  @apply flex justify-center items-center;
+}
